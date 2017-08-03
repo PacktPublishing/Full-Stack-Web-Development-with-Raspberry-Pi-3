@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--The stylesheet is added here. We haven't made it yet, so don't worry if you get an error at this point-->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--
+    This is our "Title" element. It will occupy the entire top band of our application
+  -->
+  <header>Sensor Dashboard</header>
+
+  <!--
+    We make a container structure to encapsulate our temperature and humidity displays
+  -->
+  <div class="container">
+
+    <!--
+      Here, we define the structure of each display
+    -->
+    <div class="temperature">
+      <!--
+        Add subsections for the title, value, and unit.
+        We give each section a class name, because we want to style each one differently (give a larger size to value as opposed to title and unit)
+      -->
+      <p class="title">Temperature</p>
+      <p class="value" id="temperature-display">Loading... </p>
+      <p class="unit">°C</p>
+    </div>
+
+    <!--
+      The humidity display has a similar structure to the temperature display
+    -->
+    <div class="humidity">
+      <p class="title">Humidity</p>
+      <p class="value" id="humidity-display">Loading...</p>
+      <p class="unit">%</p>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div>
+      <canvas id="temperature-chart" width="100%" height="400px">
+    </div>
+    <div>
+      <canvas id="humidity-chart" width="100%" height="400px">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
