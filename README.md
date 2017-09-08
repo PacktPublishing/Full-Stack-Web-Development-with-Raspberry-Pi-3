@@ -7,7 +7,7 @@ This book starts by familiarizing you with the various components that make up t
 
 
 ## Instructions and Navigation
-All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
+All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter03.
 
 
 
